@@ -1,7 +1,12 @@
 {
 	"name": "gwion",
 	"displayName": "Gwion",
+	"publisher": "Gwion",
 	"description": "Strongly-timed musical programming language",
+	"repository": {
+		"url": "https://github.com/Gwion/vscode"
+	},
+	"icon": "Gwion.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.56.0"
