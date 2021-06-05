@@ -1,0 +1,141 @@
+{
+	"scopeName": "source.gwion",
+	"name": "Gwion",
+	"fileTypes": [
+	  "gw"
+	],
+	"patterns": [
+	  {
+		"begin": "(^[ \\t]+)?(?=#)",
+		"beginCaptures": {
+		  "1": {
+			"name": "punctuation.whitespace.comment.leading.gwion"
+		  }
+		},
+		"end": "\\n",
+		"patterns": [
+			{
+				"begin": "#import ",
+				"beginCaptures": {
+				  "0": {
+					"name": "keyword.control.import.gwion"
+				  }
+				},
+				"end": "\\n",
+				"name": "keyword.control.import.gwion"
+			},
+			{
+			"begin": "#!",
+			"beginCaptures": {
+			  "0": {
+				"name": "punctuation.definition.comment.gwion"
+			  }
+			},
+			"end": "\\n",
+			"name": "comment.line.double-slash.gwion"
+		  }
+		]
+	  },
+	  {
+		"begin": "\"",
+		"beginCaptures": {
+		  "0": {
+			"name": "punctuation.definition.string.begin.gwion"
+		  }
+		},
+		"end": "\"",
+		"endCaptures": {
+		  "0": {
+			"name": "punctuation.definition.string.end.gwion"
+		  }
+		},
+		"name": "string.quoted.double.gwion",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.gwion",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  {
+		"match": "<<<|>>>",
+		"name": "support.function.debug.gwion"
+	  },
+	  {
+		"match": "\\b(int|float|time|dur|void|same|complex|polar|string)\\b",
+		"name": "storage.type.gwion"
+	  },
+	  {
+		"match": "\\b(if|else|while|until|for|repeat|break|continue|return|switch|do)\\b",
+		"name": "keyword.control.gwion"
+	  },
+	  {
+		"match": "\\b(class|interface)\\b",
+		"name": "storage.type.class.gwion"
+	  },
+	  {
+		"match": "\\b(extends|public|static|pure|implements|protected|private)\\b",
+		"name": "storage.modifier.class.gwion"
+	  },
+	  {
+		"match": "\\b(this|super)\\b",
+		"name": "variable.language.gwion"
+	  },
+	  {
+		"match": "\\b(function|fun|spork|const|new)\\b",
+		"name": "keyword.control.gwion"
+	  },
+	  {
+		"match": "\\b(now|true|false|maybe|null|NULL|me|samp|ms|second|minute|hour|day|week|chout|cherr|dac|adc|blackhole)\\b",
+		"name": "constant.special.gwion"
+	  },
+	  {
+		"match": "\\b(0[xX]\\h(?>_?\\h)*|\\d(?>_?\\d)*(\\.(?![^[:space:][:digit:]])(?>_?\\d)*)?([eE][-+]?\\d(?>_?\\d)*)?|0[bB][01]+|pi)\\b",
+		"name": "constant.numeric.gwion"
+	  },
+	  {
+		"match": "=>|=<|@=>|\\+=>|\\-=>|\\*=>|\\/=>|%=>|\\+\\+|\\+|\\-\\-|\\-|\\*|\\/(?!\\/)|%|==|!=|<=|>=|<<|>>|<|>|&&|\\|\\||&|\\||\\^|\\$|::",
+		"name": "keyword.operator.gwion"
+	  },
+	  {
+		"match": "\\b(UGen|SinOsc|PulseOsc|SqrOsc|TriOsc|SawOsc|Phasor|Noise|Impulse|Step|Gain|SndBuf2?|HalfRect|FullRect|Mix2|Pan2|GenX|CurveTable|WarpTable|LiSa|Envelope|ADSR|Delay|DelayA|DelayL|Echo|JCRev|NRev|PRCRev|Chorus|Modulate|PitShift|SubNoise|Blit|BlitSaw|BlitSquare|WvIn|WaveLoop|WvOut|OneZero|TwoZero|OnePole|TwoPole|PoleZero|BiQuad|Filter|LPF|HPF|BPF|BRF|ResonZ|Dyno|StkInstrument|BandedWG|BlowBotl|BlowHole|Bowed|Brass|Clarinet|Flute|Mandolin|ModalBar|Moog|Saxofony|Shakers|Sitar|StifKarp|VoicForm|FM|BeeThree|FMVoices|HevyMetl|PercFlut|Rhodey|TubeBell|Wurley|UGen_Multi|UGen_Stereo|Chubgraph|Chugen|FilterBasic|FilterStk|LiSa10|Gen5|Gen7|Gen9|Gen10|Gen17|CNoise|BLT)\\b",
+		"name": "support.class.ugen.gwion"
+	  },
+	  {
+		"match": "\\b(UAna|UAnaBlob|Windowing|FFT|IFFT|DCT|IDCT|Centroid|Flux|RMS|RollOff|ZeroX|FeatureCollector|Flip|pilF|AutoCorr|XCorr)\\b",
+		"name": "support.class.uana.gwion"
+	  },
+	  {
+		"match": "\\b(Std|Machine|Math|Shred|RegEx|Object)\\b",
+		"name": "support.class.library.gwion"
+	  },
+	  {
+		"match": "\\b(Event|MidiIn|MidiMsg|OscRecv|OscEvent|Hid|HidMsg|MidiOut|OscOut|OscIn|OscMsg)\\b",
+		"name": "support.class.event.gwion"
+	  },
+	  {
+		"match": "\\b(IO|FileIO|StdOut|StdErr|SerialIO|MidiFileIn|KBHit)\\b",
+		"name": "support.class.io.gwion"
+	  },
+	  {
+		"match": "\\b(ABSaturator|AmbPan3|Binaural|Bitcrusher|Elliptic|ExpDelay|ExpEnv|Faust|FluidSynth|FoldbackSaturator|GVerb|KasFilter|LADSPA|MagicSine|Mesh2D|Multicomb|NHHall|Overdrive|Pan4|Pan8|Pan16|Perlin|PitchTrack|PowerADSR|Random|Sigmund|Spectacle|Wavetable|WinFuncEnv|WPDiodeLadder|WPKorg35)\\b",
+		"name": "support.class.chugin.gwion"
+	  },
+	  {
+		"match": "(\\.)\\s*([a-zA-Z_$][\\w$]*)",
+		"captures": {
+		  "2": {
+			"name": "entity.name.function.gwion"
+		  }
+		}
+	  },
+	  {
+		"match": "([A-Za-z_$][\\w$]*)\\s*(\\()",
+		"captures": {
+		  "1": {
+			"name": "entity.name.function.gwion"
+		  }
+		}
+	  }
+	]
+  }
