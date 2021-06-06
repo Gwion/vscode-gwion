@@ -66,15 +66,15 @@
 		"name": "storage.type.gwion"
 	  },
 	  {
-		"match": "\\b(if|else|while|until|for|repeat|break|continue|return|switch|do)\\b",
+		"match": "\\b(if|else|while|until|for|foreach|repeat|break|continue|return|match|case|do|when|where|try|retry|defer|varloop|perform|handle)\\b",
 		"name": "keyword.control.gwion"
 	  },
 	  {
-		"match": "\\b(class|interface)\\b",
+		"match": "\\b(class|struct|typedef|distinct|funptr|trait|enum|union|interface)\\b",
 		"name": "storage.type.class.gwion"
 	  },
 	  {
-		"match": "\\b(extends|public|static|pure|implements|protected|private)\\b",
+		"match": "\\b(extends|global|static|abstract|final|implements|protect|private|late|var)\\b",
 		"name": "storage.modifier.class.gwion"
 	  },
 	  {
@@ -82,7 +82,7 @@
 		"name": "variable.language.gwion"
 	  },
 	  {
-		"match": "\\b(function|fun|spork|const|new)\\b",
+		"match": "\\b(fun|operator|spork|fork|const|new)\\b",
 		"name": "keyword.control.gwion"
 	  },
 	  {
