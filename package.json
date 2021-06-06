@@ -7,7 +7,7 @@
 		"url": "https://github.com/Gwion/vscode"
 	},
 	"icon": "Gwion.png",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
