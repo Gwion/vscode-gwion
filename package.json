@@ -7,16 +7,14 @@
 		"url": "https://github.com/Gwion/vscode"
 	},
 	"icon": "Gwion.png",
-	"version": "0.2",
+	"version": "0.2.1",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:gwion.helloWorld"
-	],
+	"activationEvents": [],
 	"main": "./out/extension.js",
 	"contributes": {
 		"languages": [
