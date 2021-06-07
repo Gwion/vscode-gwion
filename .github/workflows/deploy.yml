@@ -17,11 +17,14 @@ jobs:
         id: publishToOpenVSX
         env:
           INPUT_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
+        with:
+          pat: ${{ secrets.OPEN_VSX_TOKEN }}
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v0
         env:
           INPUT_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
         with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
           registryUrl: https://marketplace.visualstudio.com
           extensionFile: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
           packagePath: ''
