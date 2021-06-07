@@ -8,22 +8,18 @@ It supports syntax highlighting and `#!` style line comments for files with a `.
 
 ## Known Issues
 
-- Syntax highlighting does not support common Gwion objects and modules.
+- None at the moment. Please open an issue on Github if you find any.
 
 ## Release Notes
 
-### 0.1
-
-The first release of this extension offers basic syntax highlighting and `#!` style line comments.
-
+Please see [the changelog](CHANGELOG.md).
 
 ---------------------------------------------------------
 
 ## Todo
 
-- Improve syntax highlighting
-- Implement syntax checking
-- Implement autocompletion and more [programmatic language features](https://code.visualstudio.com/api/language-extensions/programmatic-language-features)
+- Add syntax checking
+- Add autocompletion and more [programmatic language features](https://code.visualstudio.com/api/language-extensions/programmatic-language-features)
 
 
 Any suggestions and pull requests are always appreciated!

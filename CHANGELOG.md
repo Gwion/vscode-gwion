@@ -2,8 +2,12 @@
 
 All notable changes to the "gwion" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.2 - 2021-06-07
+### Added
+- Syntax highlighting for all Gwion control keywords, storage types and class types. 
+- Automated deployments to both VSCode Marketplate as well as Open VSX
+- This changelog
 
-## [Unreleased]
+## 0.1
 
-- Initial release
+The first release of this extension offers basic syntax highlighting and `#!` style line comments.
