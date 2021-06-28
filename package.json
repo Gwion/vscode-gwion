@@ -24,8 +24,9 @@
 					".gw"
 				],
 				"aliases": [
-					"gw",
-					"gwion"
+					"Gwion",
+					"gwion",
+					"gw"
 				],
 				"configuration": "./language-configuration.json"
 			}
