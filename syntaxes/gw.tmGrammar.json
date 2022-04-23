@@ -82,7 +82,7 @@
 		"name": "variable.language.gwion"
 	  },
 	  {
-		"match": "\\b(fun|operator|spork|fork|const|new)\\b",
+		"match": "\\b(fun|operator|locale|spork|fork|const|new)\\b",
 		"name": "keyword.control.gwion"
 	  },
 	  {
