@@ -18,9 +18,9 @@
             {
                 "id": "gwion",
                 "aliases": [
-                   "Gwion",
-                   "gwion",
-                   "gw"
+                    "Gwion",
+                    "gwion",
+                    "gw"
                 ],
                 "extensions": [
                     ".gw"
@@ -28,13 +28,13 @@
                 "configuration": "./language-configuration.json"
             }
         ],
-            "grammars": [
-                     {
-                             "language": "gwion",
-                             "scopeName": "source.gwion",
-                             "path": "./syntaxes/gw.tmGrammar.json"
-                     }
-             ]
+        "grammars": [
+            {
+                "language": "gwion",
+                "scopeName": "source.gwion",
+                "path": "./syntaxes/gw.tmGrammar.json"
+            }
+        ]
     },
     "engines": {
         "vscode": "^1.86.0"
@@ -51,19 +51,15 @@
         "lint": "eslint src --ext ts",
         "test": "node ./out/test/runTest.js"
     },
-            "dependencies": {
-                "node-fetch": "^2.7.0",
-                "vscode-languageclient": "^9.0.1",
-                "vscode-languageserver": "^9.0.1",
-                "vscode-languageserver-textdocument": "^1.0.11"
-            },
-            "devDependencies": {
-                "@types/node-fetch": "^2.6.11",
-                "npm": "^7.0.0",
-                "typescript": "^4.8.4"
-            },
-            "engines": {
-                "vscode": "^1.86.0"
-            }
-
+    "dependencies": {
+        "node-fetch": "^2.7.0",
+        "vscode-languageclient": "^9.0.1",
+        "vscode-languageserver": "^9.0.1",
+        "vscode-languageserver-textdocument": "^1.0.11"
+    },
+    "devDependencies": {
+        "@types/node-fetch": "^2.6.11",
+        "npm": "^7.0.0",
+        "typescript": "^4.8.4"
+    }
 }
