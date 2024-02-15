@@ -38,12 +38,11 @@
     "engines": {
         "vscode": "^1.52.0"
     },
-    "main": "./client/out/extension",
+    "main": "./out/extension",
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -b",
         "watch": "tsc -b -w",
-        "postinstall": "cd client && npm install"
     },
     "devDependencies": {
         "@types/node": "^16.11.7",
