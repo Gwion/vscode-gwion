@@ -39,6 +39,9 @@
         "vscode": "^1.52.0"
     },
     "main": "./out/extension",
+    "activationEvents": [
+        "onLanguage:gwion"
+    ],
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -b",
