@@ -49,13 +49,10 @@
         "watch": "tsc -b -w ./o",
         "pretest": "npm run compile && npm run lint",
         "lint": "eslint src --ext ts",
-        "test": "node ./out/test/runTest.js",
-        "postinstall": "npm install"
+        "test": "node ./out/test/runTest.js"
     },
     "devDependencies": {
-        "@types/node": "^16.11.7",
         "@types/node-fetch": "^2.6.11",
-        "@types/vscode": "^1.86.0",
         "npm": "^7.0.0",
         "typescript": "^4.8.4"
     },
