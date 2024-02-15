@@ -1,5 +1,6 @@
 {
     "name": "gwion-lsp",
+    "publisher": "Gwion",
     "description": "A VS Code Gwion plugin that runs gwiond.",
     "author": "the Gwion team",
     "license": "MIT",
