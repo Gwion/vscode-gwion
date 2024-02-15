@@ -1,13 +1,12 @@
 {
-    "publisher": "Gwion",
     "name": "gwion-lsp",
     "description": "A VS Code Gwion plugin that runs gwiond.",
     "author": "the Gwion team",
     "license": "MIT",
-    "version": "1.0.2",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Gwion/gwiond"
+        "url": "https://github.com/Gwion/gwiondr"
     },
     "categories": [],
     "keywords": [
@@ -18,9 +17,9 @@
             {
                 "id": "gwion",
                 "aliases": [
-                    "Gwion",
-                    "gwion",
-                    "gw"
+                   "Gwion",
+                   "gwion",
+                   "gw"
                 ],
                 "extensions": [
                     ".gw"
@@ -28,45 +27,35 @@
                 "configuration": "./language-configuration.json"
             }
         ],
-        "grammars": [
-            {
-                "language": "gwion",
-                "scopeName": "source.gwion",
-                "path": "./syntaxes/gw.tmGrammar.json"
-            }
-        ]
+            "grammars": [
+                     {
+                             "language": "gwion",
+                             "scopeName": "source.gwion",
+                             "path": "./client/syntaxes/gw.tmGrammar.json"
+                     }
+             ]
     },
     "engines": {
-        "vscode": "^1.86.0"
+        "vscode": "^1.52.0"
     },
-    "main": "./out/extension",
-    "activationEvents": [
-        "onLanguage:horse64"
-    ],
+    "main": "./client/out/extension",
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -b ./",
-        "watch": "tsc -b -w ./",
-        "pretest": "npm run compile && npm run lint",
-        "lint": "eslint src --ext ts",
-        "test": "node ./out/test/runTest.js"
+        "compile": "tsc -b",
+        "watch": "tsc -b -w",
+        "postinstall": "cd client && npm install"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.7",
+        "@types/node-fetch": "^2.6.11",
+        "@types/vscode": "^1.86.0",
+        "npm": "^7.0.0",
+        "typescript": "^4.8.4"
     },
     "dependencies": {
         "node-fetch": "^2.7.0",
         "vscode-languageclient": "^9.0.1",
         "vscode-languageserver": "^9.0.1",
         "vscode-languageserver-textdocument": "^1.0.11"
-    },
-    "devDependencies": {
-        "@types/glob": "^8.1.0",
-        "@types/mocha": "^10.0.6",
-        "@types/node": "^16.11.7",
-        "@types/node-fetch": "^2.6.11",
-        "@types/vscode": "^1.86.0",
-        "@vscode/test-electron": "^2.3.9",
-        "mocha": "^10.3.0",
-        "npm": "^7.0.0",
-        "typescript": "^4.8.4",
-        "vscode-test": "^1.6.1"
     }
 }
