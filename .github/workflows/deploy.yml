@@ -14,7 +14,7 @@ jobs:
       - run: npm install
 #      - run: npm ci
       - name: Publish to Open VSX Registry
-        uses: HaaLeo/publish-vscode-extension@v0
+        uses: HaaLeo/publish-vscode-extension@v1
         id: publishToOpenVSX
         env:
           INPUT_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
