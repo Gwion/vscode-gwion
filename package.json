@@ -17,9 +17,9 @@
             {
                 "id": "gwion",
                 "aliases": [
-                   "Gwion",
-                   "gwion",
-                   "gw"
+                    "Gwion",
+                    "gwion",
+                    "gw"
                 ],
                 "extensions": [
                     ".gw"
@@ -27,13 +27,13 @@
                 "configuration": "./language-configuration.json"
             }
         ],
-            "grammars": [
-                     {
-                             "language": "gwion",
-                             "scopeName": "source.gwion",
-                             "path": "./client/syntaxes/gw.tmGrammar.json"
-                     }
-             ]
+        "grammars": [
+            {
+                "language": "gwion",
+                "scopeName": "source.gwion",
+                "path": "./client/syntaxes/gw.tmGrammar.json"
+            }
+        ]
     },
     "engines": {
         "vscode": "^1.52.0"
@@ -51,8 +51,11 @@
         "@types/node": "^16.11.7",
         "@types/node-fetch": "^2.6.11",
         "@types/vscode": "^1.52.0",
+        "glob": "^10.3.10",
+        "mocha": "^10.3.0",
         "npm": "^7.0.0",
-        "typescript": "^4.8.4"
+        "typescript": "^4.8.4",
+        "vscode-test": "^1.6.1"
     },
     "dependencies": {
         "node-fetch": "^2.7.0",
