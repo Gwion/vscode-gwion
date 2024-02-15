@@ -44,8 +44,8 @@
     ],
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -b",
-        "watch": "tsc -b -w"
+        "compile": "tsc -b ./",
+        "watch": "tsc -b -w ./"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.6",
