@@ -40,6 +40,9 @@
         "vscode": "^1.52.0"
     },
     "main": "./out/extension",
+    "activationEvents": [
+        "onLanguage:horse64"
+    ],
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -b",
