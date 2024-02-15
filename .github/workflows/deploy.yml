@@ -21,7 +21,7 @@ jobs:
         with:
           pat: ${{ secrets.OPEN_VSX_TOKEN }}
       - name: Publish to Visual Studio Marketplace
-        uses: HaaLeo/publish-vscode-extension@v0
+        uses: HaaLeo/publish-vscode-extension@v1
         env:
           INPUT_PAT: ${{ secrets.VSCE_TOKEN }}
         with:
