@@ -5,7 +5,7 @@
     "description": "A VS Code Gwion plugin that runs gwiond.",
     "author": "the Gwion team",
     "license": "MIT",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icon": "Gwion.png",
 
     "repository": {
@@ -35,7 +35,7 @@
             {
                 "language": "gwion",
                 "scopeName": "source.gwion",
-                "path": "./client/syntaxes/gw.tmGrammar.json"
+                "path": "./syntaxes/gw.tmGrammar.json"
             }
         ]
     },
