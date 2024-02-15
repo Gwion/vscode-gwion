@@ -5,6 +5,7 @@ This is a VSCode extension for [Gwion](https://gwion.github.io/Gwion/), the stro
 ## Features
 
 It supports syntax highlighting and `#!` style line comments for files with a `.gw` extension.
+Also lauches `gwiond`, the language server
 
 ## Known Issues
 
@@ -18,7 +19,6 @@ Please see [the changelog](CHANGELOG.md).
 
 ## Todo
 
-- Add syntax checking
 - Add autocompletion and more [programmatic language features](https://code.visualstudio.com/api/language-extensions/programmatic-language-features)
 
 
