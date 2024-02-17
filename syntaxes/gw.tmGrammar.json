@@ -21,7 +21,7 @@
 					"name": "keyword.control.import.gwion"
 				  }
 				},
-				"end": "\\n",
+				"end": "[ \t]*",
 				"name": "keyword.control.import.gwion"
 			},
 			{
@@ -30,8 +30,8 @@
 			  "0": {
 				"name": "punctuation.definition.comment.gwion"
 			  }
-			},
-			"end": "\\n",
+			},				
+			"end": "[ \t]*",
 			"name": "comment.line.double-slash.gwion"
 		  }
 		]
